@@ -1,0 +1,198 @@
+/* estilos.css */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #a8e0a1, #f0f4c3);
+    color: black;
+    
+    
+}
+
+.header {
+   background-image: url('https://img.freepik.com/fotos-premium/hierbas-medicinales-frescas_151509-196.jpg?semt=ais_user_personalization&w=740&q=80');
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 0px black, 
+                 -1px -1px 0px black,  
+                 -1px 1px 0px black,  
+                 1px -1px 0px black;
+}
+
+.logo {
+    
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1 1 25%;
+      background: linear-gradient(45deg, #b1f0d0, #08e0aa); 
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(199, 198, 198, 0.1);
+}
+
+.author-card {
+    text-align: center;
+}
+
+.author-image {
+    border-radius: 50px;
+    width: 20%;
+    height: 10%;
+    border: 5px solid #cbcecb;
+}
+
+.video-section {
+    margin-top: 20px;
+}
+
+.video-thumbnails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-thumb {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.video-thumb img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    flex: 1 1 70%;
+    background: linear-gradient(45deg, #58c8e4, #33c27f); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.02);
+}
+
+.recipe-header {
+    background: linear-gradient(to right, #71bae4, #0e6ea5);
+    color: white;
+    padding: 25px;
+     text-shadow: 1px 1px 0px black, 
+                 -1px -1px 0px black,  
+                 -1px 1px 0px black,  
+                 1px -1px 0px black;
+}
+
+
+.recipe-title {
+    margin: 0;
+}
+
+.recipe-image-container {
+    text-align: center;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 8px 8px;
+}
+
+.recipe-excerpt {
+    padding: 15px;
+}
+
+.read-more {
+    display: block;
+    text-align: center;
+     background: linear-gradient(to right, #3d5fd1, #5042c9);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 15px 0;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+     background: linear-gradient(to right, #376445, #03ac27);
+    
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
